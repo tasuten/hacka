@@ -129,11 +129,11 @@ div.article-tags {
 }
 
 /* Top page, list of entries */
-li.entries {
+li.entry {
   list-style: none;
   margin: 24px auto;
 }
-li.entries:before {
+li.entry:before {
   content: "# ";
   font-family: Menlo, Consolas, monospace;
   color: #808080;
