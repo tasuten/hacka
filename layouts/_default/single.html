@@ -2,9 +2,9 @@
 {{ partial "title" . }}
 <main>
 <article>
-<h2 id="article_title">{{ .Title }}</h2>
-<div id="date"><time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time></div>
-<article id="content">
+<h2 class="article_title">{{ .Title }}</h2>
+<div class="article_date"><time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time></div>
+<article class="article_content">
   {{ .Content }}
 </article>
 <aside>

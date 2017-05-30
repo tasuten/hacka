@@ -1,9 +1,9 @@
 {{ partial "header" . }}
 {{ partial "title" . }}
 <main>
-  <ul id="posts_list">
+  <ul class="posts_list">
   {{ range .Data.Pages }}
-  <li id="post">
+  <li class="post">
     <a class="post_title" href="{{ .Permalink }}">{{ .Title }}</a>
     <div class="post_date">{{ .Date.Format "Mon,  Jan 2,  2006" }}</div>
   </li>

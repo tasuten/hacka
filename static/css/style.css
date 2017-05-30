@@ -24,7 +24,7 @@ header {
   margin-bottom: 50px;
 }
 
-#blog_name {
+.blog_title {
   color: #080000;
   font-family: Menlo, Consolas, monospace;
   font-size: 42px;
@@ -34,22 +34,22 @@ h2, h3, h4 {
   font-family: Menlo, Consolas, monospace;
 }
 
-h2#article_title {
+h2.article_title {
   font-size: 30px;
 }
 
-div#date {
+div.article_date {
   font-family: Menlo, Consolas, monospace;
   text-align: right;
 }
 
-h2#article_title:before {
+h2.article_title:before {
   content: "# ";
   font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
-h2:not(#article_title) {
+h2:not(.article_title) {
   margin-top: 2.5em;
 }
 
@@ -75,13 +75,13 @@ code {
   font-family: Menlo, Consolas, monospace;
 }
 
-div#social-icons {
+div.social-icons {
   font-size: 30px;
   text-align: center;
   margin-top: 20px;
 }
 
-li#post {
+li.post {
   list-style: none;
   margin: 24px auto;
 
@@ -96,7 +96,7 @@ div.post_date {
   font-family: Menlo, Consolas, monospace;
 }
 
-li#post:before {
+li.post:before {
   content: "# ";
   font-family: Menlo, Consolas, monospace;
   color: #808080;
