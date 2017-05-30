@@ -49,6 +49,10 @@ h2#article_title:before {
   color: #808080;
 }
 
+h2:not(#article_title) {
+  margin-top: 2.5em;
+}
+
 h2:before {
   content: "## ";
   font-family: monospace;
