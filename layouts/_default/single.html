@@ -1,5 +1,5 @@
-{{ partial "header" . }}
-{{ partial "title" . }}
+{{ partial "html_head" . }}
+{{ partial "site_top" . }}
 <main>
 <article>
 <h2 class="article-title">{{ .Title }}</h2>
@@ -25,5 +25,5 @@
 </article>
 </main>
 
-{{ partial "tail" . }}
-{{ partial "footer" . }}
+{{ partial "site_bottom" . }}
+{{ partial "html_tail" . }}

@@ -1,5 +1,5 @@
-{{ partial "header" . }}
-{{ partial "title" . }}
+{{ partial "html_heade" . }}
+{{ partial "site_top" . }}
 <main>
   <ul class="entry-list">
   {{ range .Data.Pages.ByDate.Reverse }}
@@ -11,5 +11,5 @@
   </ul>
 </main>
 
-{{ partial "tail" . }}
-{{ partial "footer" . }}
+{{ partial "site_bottom" . }}
+{{ partial "html_tail" . }}
