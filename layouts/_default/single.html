@@ -1,1 +1,17 @@
+{{ partial "header" . }}
 {{ partial "title" . }}
+<main>
+<article>
+<h2 id="article_title">{{ .Title }}</h2>
+<time id="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+<article id="content">
+  {{ .Content }}
+</article>
+<aside>
+<!-- TODO: share buttons -->
+</aside>
+</article>
+</main>
+
+{{ partial "tail" . }}
+{{ partial "footer" . }}
