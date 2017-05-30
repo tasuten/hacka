@@ -18,6 +18,10 @@
 <aside>
 {{ partial "share" . }}
 </aside>
+
+{{ if .Site.DisqusShortname }}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}
 </article>
 </main>
 
