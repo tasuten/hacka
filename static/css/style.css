@@ -102,3 +102,10 @@ li.post:before {
   color: #808080;
 }
 
+blockquote {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.1em 0.1em 0.1em 1.2em;
+  font-size: 0.9em;
+  border-left: 10px solid #cccccc;
+}
