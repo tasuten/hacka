@@ -1,14 +1,14 @@
 {{ partial "html_head" . }}
 {{ partial "site_top" . }}
 <main>
-  <ul class="entry-list">
+<ul class="entry-list">
   {{ range .Data.Pages.ByDate.Reverse }}
   <li class="entry">
     <a class="entry-title" href="{{ .Permalink }}">{{ .Title }}</a>
     <div class="entry-date">{{ .Date.Format (default "2006-01-02" .Site.Params.DateForm) }}</div>
   </li>
   {{ end }}
-  </ul>
+</ul>
 </main>
 
 {{ partial "site_bottom" . }}
