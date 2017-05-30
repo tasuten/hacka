@@ -109,3 +109,11 @@ blockquote {
   font-size: 0.9em;
   border-left: 10px solid #cccccc;
 }
+
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: '- ';
+}
