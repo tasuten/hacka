@@ -5,7 +5,7 @@
   <address>
     <div class="social-icons">
       {{ range .Site.Params.social }}
-      <a href="{{ .url }}"><span class="fa {{ .fa_icon }}"></span></a>
+      <a href="{{ .url }}"><span class="fa fa-{{ .fa_icon }}"></span></a>
       {{ end }}
     </div>
   </address>
