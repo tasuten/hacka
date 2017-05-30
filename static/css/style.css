@@ -26,12 +26,12 @@ header {
 
 #blog_name {
   color: #080000;
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   font-size: 42px;
 }
 
 h2, h3, h4 {
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
 }
 
 h2#article_title {
@@ -39,13 +39,13 @@ h2#article_title {
 }
 
 div#date {
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   text-align: right;
 }
 
 h2#article_title:before {
   content: "# ";
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
@@ -55,24 +55,24 @@ h2:not(#article_title) {
 
 h2:before {
   content: "## ";
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
 h3:before {
   content: "### ";
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
 h4:before {
   content: "#### ";
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
 code {
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
 }
 
 div#social-icons {
@@ -83,7 +83,7 @@ div#social-icons {
 
 li#post {
   list-style: none;
-  margin: 15px auto;
+  margin: 24px auto;
 
 }
 
@@ -92,12 +92,13 @@ a.post_title {
   font-size: 21px;
 }
 div.post_date {
-  font-family: monospace;
+  font-size: 14px;
+  font-family: Menlo, Consolas, monospace;
 }
 
 li#post:before {
   content: "# ";
-  font-family: monospace;
+  font-family: Menlo, Consolas, monospace;
   color: #808080;
 }
 
