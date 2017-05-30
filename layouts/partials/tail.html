@@ -1,12 +1,12 @@
 <footer>
+  <small>
+    {{ .Site.Copyright }}
+  </small>
   <address>
-    <div class="social-icons">
+    <div id="social-icons">
       {{ range .Site.Params.social }}
       <a href="{{ .url }}"><span class="fa {{ .fa_icon }}"></span></a>
       {{ end }}
     </div>
   </address>
-  <small>
-    {{ .Site.Copyright }}
-  </small>
 </footer>

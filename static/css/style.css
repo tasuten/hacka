@@ -70,3 +70,9 @@ h4:before {
 code {
   font-family: monospace;
 }
+
+div#social-icons {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
