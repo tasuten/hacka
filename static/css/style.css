@@ -26,10 +26,14 @@ a:hover {
 }
 
 
-.site-title {
+h1.site-title {
   color: #080000;
   font-family: Menlo, Consolas, monospace;
   font-size: 42px;
+}
+
+h1.site-title > a {
+  color: #080000;
 }
 
 footer {
