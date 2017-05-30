@@ -5,7 +5,7 @@
   {{ range .Data.Pages.ByDate.Reverse }}
   <li class="entries">
     <a class="entry-title" href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="entry-date">{{ .Date.Format "2006-01-02" }}</div>
+    <div class="entry-date">{{ .Date.Format (default "2006-01-02" .Site.Params.DateForm) }}</div>
   </li>
   {{ end }}
   </ul>
