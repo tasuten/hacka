@@ -1,9 +1,72 @@
 @charset "UTF-8";
 
 .wrap {
+  background-color: #fdfdfd;
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
   padding: 50px 5% 150px 5%;
 }
 
+* {
+  color: #080000;
+}
+
+a {
+  color: #808080;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+#blog_name {
+  color: #080000;
+  font-family: monospace;
+  font-size: 42px;
+}
+
+h2, h3, h4 {
+  font-family: monospace;
+}
+
+h2#article_title {
+  font-size: 30px;
+}
+
+div#date {
+  font-family: monospace;
+  text-align: right;
+}
+
+h2#article_title:before {
+  content: "# ";
+  font-family: monospace;
+  color: #808080;
+}
+
+h2:before {
+  content: "## ";
+  font-family: monospace;
+  color: #808080;
+}
+
+h3:before {
+  content: "### ";
+  font-family: monospace;
+  color: #808080;
+}
+
+h4:before {
+  content: "#### ";
+  font-family: monospace;
+  color: #808080;
+}
+
+code {
+  font-family: monospace;
+}

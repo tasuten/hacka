@@ -3,7 +3,7 @@
 <main>
 <article>
 <h2 id="article_title">{{ .Title }}</h2>
-<time id="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+<div id="date"><time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time></div>
 <article id="content">
   {{ .Content }}
 </article>
