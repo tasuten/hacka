@@ -76,3 +76,24 @@ div#social-icons {
   text-align: center;
   margin-top: 20px;
 }
+
+li#post {
+  list-style: none;
+  margin: 15px auto;
+
+}
+
+a.post_title {
+  font-family: monospace;
+  font-size: 21px;
+}
+div.post_date {
+  font-family: monospace;
+}
+
+li#post:before {
+  content: "# ";
+  font-family: monospace;
+  color: #808080;
+}
+
