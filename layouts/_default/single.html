@@ -7,6 +7,14 @@
 <article class="article-content">
   {{ .Content }}
 </article>
+
+<div class="article-tags">
+{{ range .Params.tags }}
+<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+{{ end }}
+</div>
+
+
 <aside>
 {{ partial "share" . }}
 </aside>

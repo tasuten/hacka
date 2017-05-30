@@ -123,6 +123,10 @@ th, td {
   padding: 0.5em;
 }
 
+div.article-tags {
+  font-family: Menlo, Consolas, monospace;
+  text-align: right;
+}
 
 /* Top page, list of entries */
 li.entries {
