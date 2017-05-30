@@ -32,6 +32,10 @@ a:hover {
   font-size: 42px;
 }
 
+footer {
+  margin-top: 100px;
+}
+
 /* margin between the site title and entry list or article */
 header {
   margin-bottom: 50px;
