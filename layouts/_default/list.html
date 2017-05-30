@@ -1,11 +1,11 @@
 {{ partial "header" . }}
 {{ partial "title" . }}
 <main>
-  <ul class="posts_list">
+  <ul class="entry-list">
   {{ range .Data.Pages.ByDate.Reverse }}
-  <li class="post">
-    <a class="post_title" href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="post_date">{{ .Date.Format "2006-01-02" }}</div>
+  <li class="entries">
+    <a class="entry-title" href="{{ .Permalink }}">{{ .Title }}</a>
+    <div class="entry-date">{{ .Date.Format "2006-01-02" }}</div>
   </li>
   {{ end }}
   </ul>

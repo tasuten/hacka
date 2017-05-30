@@ -1,17 +1,13 @@
 @charset "UTF-8";
 
-.wrap {
-  background-color: #fdfdfd;
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 50px 5% 150px 5%;
-}
+/* common */
 
+/* default text color */
 * {
   color: #080000;
 }
 
+/* link */
 a {
   color: #808080;
   text-decoration: none;
@@ -20,59 +16,25 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
-  margin-bottom: 50px;
+/* wrap the body */
+.wrap {
+  background-color: #fdfdfd;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 5% 150px 5%;
 }
 
-.blog_title {
+
+.site-title {
   color: #080000;
   font-family: Menlo, Consolas, monospace;
   font-size: 42px;
 }
 
-h2, h3, h4 {
-  font-family: Menlo, Consolas, monospace;
-}
-
-h2.article_title {
-  font-size: 30px;
-}
-
-div.article_date {
-  font-family: Menlo, Consolas, monospace;
-  text-align: right;
-}
-
-h2.article_title:before {
-  content: "# ";
-  font-family: Menlo, Consolas, monospace;
-  color: #808080;
-}
-
-h2:not(.article_title) {
-  margin-top: 2.5em;
-}
-
-h2:before {
-  content: "## ";
-  font-family: Menlo, Consolas, monospace;
-  color: #808080;
-}
-
-h3:before {
-  content: "### ";
-  font-family: Menlo, Consolas, monospace;
-  color: #808080;
-}
-
-h4:before {
-  content: "#### ";
-  font-family: Menlo, Consolas, monospace;
-  color: #808080;
-}
-
-code {
-  font-family: Menlo, Consolas, monospace;
+/* margin between the site title and entry list or article */
+header {
+  margin-bottom: 50px;
 }
 
 div.social-icons {
@@ -81,25 +43,48 @@ div.social-icons {
   margin-top: 20px;
 }
 
-li.post {
-  list-style: none;
-  margin: 24px auto;
-
-}
-
-a.post_title {
-  font-family: monospace;
-  font-size: 21px;
-}
-div.post_date {
-  font-size: 14px;
+/* single article page (single.html) */
+/* article title */
+h2.article-title {
   font-family: Menlo, Consolas, monospace;
+  font-size: 30px;
 }
-
-li.post:before {
+div.article-date {
+  font-family: Menlo, Consolas, monospace;
+  text-align: right;
+}
+h2.article-title:before {
   content: "# ";
   font-family: Menlo, Consolas, monospace;
   color: #808080;
+}
+
+/* h2 elements in content */
+h2:not(.article-title) {
+  margin-top: 2.5em;
+}
+
+h2, h3, h4 {
+  font-family: Menlo, Consolas, monospace;
+}
+h2:before {
+  content: "## ";
+  font-family: Menlo, Consolas, monospace;
+  color: #808080;
+}
+h3:before {
+  content: "### ";
+  font-family: Menlo, Consolas, monospace;
+  color: #808080;
+}
+h4:before {
+  content: "#### ";
+  font-family: Menlo, Consolas, monospace;
+  color: #808080;
+}
+
+code {
+  font-family: Menlo, Consolas, monospace;
 }
 
 blockquote {
@@ -113,7 +98,6 @@ blockquote {
 ul {
   list-style-type: none;
 }
-
 ul li:before {
   content: '- ';
 }
@@ -123,8 +107,28 @@ table {
   border: 1px solid #080000;
   margin: 2em 0;
 }
-
 th, td {
   border: 1px solid #080000;
   padding: 0.5em;
 }
+
+
+/* Top page, list of entries */
+li.entry {
+  list-style: none;
+  margin: 24px auto;
+}
+li.entries:before {
+  content: "# ";
+  font-family: Menlo, Consolas, monospace;
+  color: #808080;
+}
+a.entry-title {
+  font-family: monospace;
+  font-size: 21px;
+}
+div.entry-date {
+  font-size: 14px;
+  font-family: Menlo, Consolas, monospace;
+}
+
