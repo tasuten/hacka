@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{ .Title }}{{ if eq .IsHome false}} - {{ .Site.Title}}{{end}}</title>
+    <title>{{ .Title }}{{ if eq .IsHome false}} {{ default "-" .Site.Params.Separator }} {{ .Site.Title}}{{end}}</title>
 
     {{ .Hugo.Generator }}
 
