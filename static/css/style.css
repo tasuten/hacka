@@ -91,6 +91,13 @@ code {
   font-family: Menlo, Consolas, monospace;
 }
 
+p code {
+  padding: 0em 0.2em;
+  font-size: 85%;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
 blockquote {
   position: relative;
   margin: 2em 0;
