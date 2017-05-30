@@ -2,7 +2,7 @@
 {{ partial "title" . }}
 <main>
   <ul class="posts_list">
-  {{ range .Data.Pages }}
+  {{ range .Data.Pages.ByDate.Reverse }}
   <li class="post">
     <a class="post_title" href="{{ .Permalink }}">{{ .Title }}</a>
     <div class="post_date">{{ .Date.Format "Mon,  Jan 2,  2006" }}</div>
