@@ -117,3 +117,14 @@ ul {
 ul li:before {
   content: '- ';
 }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #080000;
+  margin: 2em 0;
+}
+
+th, td {
+  border: 1px solid #080000;
+  padding: 0.5em;
+}
