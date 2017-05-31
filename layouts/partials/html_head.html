@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html{{ with .Site.LanguageCode }} lang="{{.}}"{{end}}>
+<html{{ with .Site.LanguageCode }} lang="{{ . }}"{{end}}>
   <head>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{ with .Site.Params.Description }}
+    <meta name="description" content="{{ . }}" />
+    {{ end }}
+
+    {{ with .Site.Params.Author }}
+    <meta name="author" content="{{ . }}" />
+    {{ end }}
 
     <title>{{ .Title }}{{ if eq .IsHome false}} {{ default "-" .Site.Params.TitleSeparator }} {{ .Site.Title}}{{end}}</title>
 
