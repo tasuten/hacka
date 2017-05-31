@@ -13,6 +13,8 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
+    {{ partial "meta_tags" . }}
+
     <title>{{ .Title }}{{ if eq .IsHome false}} {{ default "-" .Site.Params.TitleSeparator }} {{ .Site.Title}}{{end}}</title>
 
     {{ .Hugo.Generator }}
