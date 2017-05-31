@@ -4,7 +4,7 @@ licenselink = "https://github.com/tasten/hacka/blob/master/LICENSE"
 description = "Minimal blog theme for Hackers"
 homepage = "https://github.com/tasuten/hacka"
 tags = ["blog", "minimal", "highlight.js"]
-features = ["blog", ]
+features = ["blog"]
 min_version = "0.21"
 
 [author]
