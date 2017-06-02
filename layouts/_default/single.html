@@ -10,7 +10,9 @@
 
   <div class="article-tags">
     {{ range .Params.tags }}
+    {{ if ne . "" }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+    {{ end }}
     {{ end }}
   </div>
 
