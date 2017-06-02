@@ -8,6 +8,8 @@
     {{ .Content }}
   </div>
 
+</article>
+<footer class="article-footer">
   <div class="article-tags">
     {{ range .Params.tags }}
     {{ if ne . "" }}
@@ -17,14 +19,12 @@
   </div>
 
 
-  <aside>
-    {{ partial "share" . }}
-  </aside>
+  {{ partial "share" . }}
 
   {{ if .Site.DisqusShortname }}
   {{ template "_internal/disqus.html" . }}
   {{ end }}
-</article>
+</footer>
 </main>
 
 {{ partial "site_bottom" . }}

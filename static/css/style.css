@@ -126,6 +126,10 @@ th, td {
   padding: 0.5em;
 }
 
+footer.article-footer {
+  margin-top: 45px;
+}
+
 div.article-tags {
   font-family: Menlo, Consolas, monospace;
   text-align: right;
